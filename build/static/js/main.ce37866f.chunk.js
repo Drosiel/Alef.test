@@ -1,2 +1,0 @@
-(this.webpackJsonpportfolio=this.webpackJsonpportfolio||[]).push([[0],[function(o,t,p){o.exports=p(3)},function(o,t,p){o.exports=p.p+"static/media/logo.1b0244b5.svg"},function(o,t,p){},function(o,t,p){"use strict";p.r(t);p.p,p.p,p(1),p(2)}],[[0,1]]]);
-//# sourceMappingURL=main.ce37866f.chunk.js.map
