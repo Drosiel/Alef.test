@@ -1,12 +1,12 @@
 .menu
     &__list
         display: flex
+        @media screen and ( max-width: 980px )
+            display: none
     &__item
         &:not(:last-child)
             margin-right: 80px            
     &__link
-        font-family: Montserrat
-        font-style: normal
         font-weight: normal
         font-size: 18px
         line-height: 22px

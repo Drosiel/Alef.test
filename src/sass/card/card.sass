@@ -5,6 +5,8 @@
         display: flex
         flex-wrap: wrap
         margin: -10px
+        @media screen and ( max-width: 760px )
+            justify-content: center
     &__item
         flex: 0 0 calc( 100% / 3 )
         padding: 10px
@@ -17,9 +19,6 @@
             border-radius: 10px
             background: #ffffff
             cursor: pointer
-
-            font-family: Montserrat
-            font-style: normal
             font-weight: normal
             font-size: 14px
             line-height: 17px
@@ -27,7 +26,7 @@
     position: relative
     &__img
         position: relative
-        padding: 64% 0 0 0
+        padding: 70% 0 0 0
         img
             top: 0
             left: 0
@@ -38,11 +37,8 @@
         padding: 0 0 0 29px
     &__title
         padding: 29px 0 22px 0
-        font-family: Montserrat
-        font-style: normal
         font-weight: bold
         font-size: 24px
-        line-height: 29px
     &__info
         display: flex
         padding: 0 0 16px 0
@@ -54,42 +50,30 @@
     &__color
         padding: 0 20px 0 0
         span
-            font-family: Montserrat
-            font-style: normal
             font-weight: normal
             font-size: 12px
             line-height: 15px
     &__age
         padding: 0 48px 0 0
         span
-            font-family: Montserrat
-            font-style: normal
             font-weight: normal
             font-size: 12px
             line-height: 15px
         p
-            font-family: Montserrat
-            font-style: normal
             font-weight: bold
             font-size: 16px
             line-height: 20px
     &__paws
         span
-            font-family: Montserrat
-            font-style: normal
             font-weight: normal
             font-size: 12px
             line-height: 15px
         p
-            font-family: Montserrat
-            font-style: normal
             font-weight: bold
             font-size: 16px
             line-height: 20px
     &__prace
         padding: 0 0 29px 0
-        font-family: Montserrat
-        font-style: normal
         font-weight: bold
         font-size: 24px
         line-height: 29px
@@ -106,8 +90,6 @@
             background: #6EBBD3
             width: 100%
             height: 100%
-            font-family: Montserrat
-            font-style: normal
             font-weight: bold
             font-size: 16px
             line-height: 20px

@@ -1,34 +1,35 @@
 .subscribe
-    padding: 91px 80px 115px 0
-    &__top
+    &__form
+        max-width: max-content
+        @media screen and ( max-width: 1200px )
+            display: flex
+            flex-direction: column
+            margin: 0 auto
+    &__row
         display: flex
-        padding: 0 0 24px 0
+        margin: 0 0 24px 0
     &__input
         width: 300px
         height: 65px
         border-radius: 10px
-        padding: 22px 0 26px 33px
-
-        font-family: Montserrat
-        font-style: normal
+        margin-right: 18px
+        padding: 0 0 0 33px
         font-weight: normal
         font-size: 14px
         line-height: 17px
     &__btn
-        padding: 0 0 0 16px
-        &-item
-            padding: 22px 75px 26px 75px
-            background: #6EBBD3
-            border-radius: 10px
-    &__bottom
+        height: 65px
+        width: 250px
+        background: #6EBBD3
+        border-radius: 10px
+        cursor: pointer
+    &__label
         display: flex
         align-items: center
+        color: #ffffff
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
     &__checkbox
-        &-text
-            padding: 0 0 0 18px
-            color: #ffffff
-            font-family: Montserrat
-            font-style: normal
-            font-weight: normal
-            font-size: 14px
-            line-height: 17px
+        margin-right: 18px

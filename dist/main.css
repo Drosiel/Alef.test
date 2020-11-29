@@ -7,7 +7,8 @@ body {
   font-family: 'Montserrat', sans-serif; }
 
 .container {
-  max-width: 1280px;
+  max-width: 1320px;
+  padding: 0 20px;
   margin: 0 auto; }
 
 svg {
@@ -61,22 +62,29 @@ button {
   .header__menu {
     margin-right: auto; }
   .header__bottom {
-    padding: 50px 0 66px 0;
-    font-family: Montserrat;
-    font-style: normal;
+    padding-top: 50px;
+    padding-bottom: 66px; }
+    @media screen and (max-width: 768px) {
+      .header__bottom {
+        padding-top: 25px;
+        padding-bottom: 33px; } }
+  .header__search {
     font-weight: bold;
-    font-size: 38px;
-    line-height: 46px; }
+    font-size: 38px; }
+    @media screen and (max-width: 768px) {
+      .header__search {
+        font-size: 24px; } }
 
 .menu__list {
   display: flex; }
+  @media screen and (max-width: 980px) {
+    .menu__list {
+      display: none; } }
 
 .menu__item:not(:last-child) {
   margin-right: 80px; }
 
 .menu__link {
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 22px; }
@@ -91,29 +99,24 @@ button {
     word-wrap: normal; }
   .phone__text {
     word-wrap: normal;
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 29px; }
+    font-size: 24px; }
+    @media screen and (max-width: 768px) {
+      .phone__text {
+        font-size: 17px; } }
   .phone__bottom {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 22px;
     text-align: right; }
-
-.main__inner {
-  position: relative; }
+    @media screen and (max-width: 768px) {
+      .phone__bottom {
+        font-size: 14px; } }
 
 .sort {
   display: flex;
   padding: 37px 0; }
   .sort__text {
     padding: 0 48px 0 0;
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 22px; }
@@ -121,8 +124,6 @@ button {
     display: flex; }
   .sort__item {
     display: flex;
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 22px; }
@@ -132,9 +133,10 @@ button {
       padding: 0 84px 0 0; }
 
 .uparrow {
-  position: absolute;
-  right: 0;
-  bottom: 49px; }
+  position: fixed;
+  right: 191px;
+  bottom: 161px;
+  z-index: 100; }
   .uparrow__inner {
     padding: 20px 21px 17px 20px;
     background: #6EBBD3; }
@@ -146,6 +148,9 @@ button {
     display: flex;
     flex-wrap: wrap;
     margin: -10px; }
+    @media screen and (max-width: 760px) {
+      .deck__inner {
+        justify-content: center; } }
   .deck__item {
     flex: 0 0 calc( 100% / 3);
     padding: 10px; }
@@ -158,8 +163,6 @@ button {
       border-radius: 10px;
       background: #ffffff;
       cursor: pointer;
-      font-family: Montserrat;
-      font-style: normal;
       font-weight: normal;
       font-size: 14px;
       line-height: 17px; }
@@ -168,7 +171,7 @@ button {
   position: relative; }
   .card__img {
     position: relative;
-    padding: 64% 0 0 0; }
+    padding: 70% 0 0 0; }
     .card__img img {
       top: 0;
       left: 0;
@@ -179,11 +182,8 @@ button {
     padding: 0 0 0 29px; }
   .card__title {
     padding: 29px 0 22px 0;
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 29px; }
+    font-size: 24px; }
   .card__info {
     display: flex;
     padding: 0 0 16px 0; }
@@ -195,41 +195,29 @@ button {
   .card__color {
     padding: 0 20px 0 0; }
     .card__color span {
-      font-family: Montserrat;
-      font-style: normal;
       font-weight: normal;
       font-size: 12px;
       line-height: 15px; }
   .card__age {
     padding: 0 48px 0 0; }
     .card__age span {
-      font-family: Montserrat;
-      font-style: normal;
       font-weight: normal;
       font-size: 12px;
       line-height: 15px; }
     .card__age p {
-      font-family: Montserrat;
-      font-style: normal;
       font-weight: bold;
       font-size: 16px;
       line-height: 20px; }
   .card__paws span {
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 15px; }
   .card__paws p {
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 20px; }
   .card__prace {
     padding: 0 0 29px 0;
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 29px; }
@@ -246,8 +234,6 @@ button {
       background: #6EBBD3;
       width: 100%;
       height: 100%;
-      font-family: Montserrat;
-      font-style: normal;
       font-weight: bold;
       font-size: 16px;
       line-height: 20px;
@@ -271,57 +257,78 @@ button {
         fill-opacity: 1; }
 
 .footer__inner {
+  padding: 92px 80px;
   background: #1F2021;
   display: flex; }
+  @media screen and (max-width: 1200px) {
+    .footer__inner {
+      flex-direction: column; } }
 
 .footer__left {
-  padding: 83px 87px 92px 80px; }
+  margin: 0 87px 0 0; }
+  @media screen and (max-width: 1200px) {
+    .footer__left {
+      margin: 0 0 87px 0; } }
 
 .footer__text {
   color: #ffffff; }
+  @media screen and (max-width: 1200px) {
+    .footer__text {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
   .footer__text span {
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: bold;
     font-size: 48px;
-    line-height: 59px; }
-    .footer__text span p {
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 28px;
-      line-height: 91.2%; }
+    line-height: 59px;
+    margin: 0 0 26px 0;
+    display: block; }
+  .footer__text p {
+    font-size: 28px;
+    line-height: 91.2%;
+    padding-right: 80px; }
+    @media screen and (max-width: 1200px) {
+      .footer__text p {
+        padding: 0; } }
 
-.subscribe {
-  padding: 91px 80px 115px 0; }
-  .subscribe__top {
-    display: flex;
-    padding: 0 0 24px 0; }
-  .subscribe__input {
-    width: 300px;
-    height: 65px;
-    border-radius: 10px;
-    padding: 22px 0 26px 33px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px; }
-  .subscribe__btn {
-    padding: 0 0 0 16px; }
-    .subscribe__btn-item {
-      padding: 22px 75px 26px 75px;
-      background: #6EBBD3;
-      border-radius: 10px; }
-  .subscribe__bottom {
-    display: flex;
-    align-items: center; }
-  .subscribe__checkbox-text {
-    padding: 0 0 0 18px;
-    color: #ffffff;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px; }
+.subscribe__form {
+  max-width: max-content; }
+  @media screen and (max-width: 1200px) {
+    .subscribe__form {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto; } }
+
+.subscribe__row {
+  display: flex;
+  margin: 0 0 24px 0; }
+
+.subscribe__input {
+  width: 300px;
+  height: 65px;
+  border-radius: 10px;
+  margin-right: 18px;
+  padding: 0 0 0 33px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px; }
+
+.subscribe__btn {
+  height: 65px;
+  width: 250px;
+  background: #6EBBD3;
+  border-radius: 10px;
+  cursor: pointer; }
+
+.subscribe__label {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px; }
+
+.subscribe__checkbox {
+  margin-right: 18px; }
 
